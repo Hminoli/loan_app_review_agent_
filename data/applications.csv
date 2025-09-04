@@ -1,0 +1,9 @@
+app_id,name,age,income,employment_status,credit_score,loan_amount,purpose
+1,John Doe,32,75000,employed,680,25000,car
+2,Jane Smith,45,55000,employed,720,15000,education
+3,Ali Khan,23,30000,student,590,5000,travel
+4,Mary Joe,39,90000,self-employed,750,35000,home
+5,Chris Lee,60,40000,retired,640,12000,medical
+6,Ayesha Perera,28,95000,employed,800,40000,business
+7,Sunil Silva,34,47000,contract,610,18000,personal
+8,Nimal Fernando,52,30000,unemployed,520,10000,car
