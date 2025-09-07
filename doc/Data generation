@@ -1,0 +1,38 @@
+Data Generation
+
+1. Component Overview
+The data generation component creates synthetic loan applications for testing the system.
+
+2. Responsibilities
+
+Designed scripts to generate sample loan applicant data.
+Provided CSV files for quick testing.
+Enabled database seeding with synthetic records.
+
+3. Technical Details
+
+Formats Used: CSV for import/export, SQLite for structured storage.
+Libraries: Python (random, pandas).
+
+Core Features:
+
+Random applicant details (age, income, credit score, purpose).
+Export to data/applicants.csv.
+Load into SQLite for persistence.
+
+4. Challenges & Solutions
+
+Challenge: Ensuring realistic values (e.g., credit score 300–900).
+Solution: Applied domain-specific ranges and constraints.
+Challenge: Duplicate/random noise in data.
+Solution: Used seeded random generation.
+
+5. Testing & Validation
+
+Verified CSV imports match database schema.
+Ran pipeline with generated applicants to test performance.
+
+6. Future Improvements
+
+Add more attributes (location, occupation).
+Simulate fraud cases for AML testing.
