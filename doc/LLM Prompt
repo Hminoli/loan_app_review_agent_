@@ -1,0 +1,39 @@
+LLM Prompt Design
+
+1. Component Overview
+The LLM component provides AI-driven reasoning for loan approval or rejection using Mistral LLM via Ollama integrated with LangGraph.
+
+2. Responsibilities
+
+Designed prompts to pass loan application details to the LLM.
+Ensured the LLM explains decisions in natural language.
+Integrated LLM output into the decision pipeline.
+
+3. Technical Details
+
+LLM Used: Mistral 7B via Ollama (local inference).
+Framework: LangGraph for step-by-step orchestration.
+
+Core Features:
+
+Prompt creation with applicant details.
+Generate decision explanations.
+Offline fallback (if LLM unavailable, pipeline still works).
+
+4. Challenges & Solutions
+
+Challenge: LLM outputs were sometimes unstructured.
+Solution: Added JSON cleaning + fallback logic.
+Challenge: Model pulling issues (internet/firewall).
+Solution: Provided fallback to rule-based decisioning.
+
+5. Testing & Validation
+
+Tested prompts with multiple applicants (approve/reject/manual).
+Verified explanations matched loan decisions.
+
+6. Future Improvements
+
+Fine-tune prompts for domain-specific loan policies.
+
+Add multilingual support.
