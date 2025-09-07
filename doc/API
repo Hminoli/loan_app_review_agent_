@@ -1,0 +1,39 @@
+API Simulation
+
+1. Component Overview
+The API provides backend services for validating inputs, running decision pipelines, and returning structured loan decisions.
+
+2. Responsibilities
+
+Developed FastAPI endpoints for loan reviews, KPIs, and history.
+Handled validation using Pydantic schemas.
+Integrated API with database and pipeline.
+
+3. Technical Details
+
+Framework: FastAPI.
+Endpoints:
+
+/agent_review → runs pipeline, returns decision.
+/kpis → fetches approval/rejection stats.
+/decisions → shows history.
+/mock/kyc + /mock/credit → simulates external checks.
+Server: Uvicorn for running API.
+
+4. Challenges & Solutions
+
+Challenge: Input validation errors.
+Solution: Used Pydantic validators for ranges (e.g., age 18–100).
+Challenge: CORS issues with frontend.
+Solution: Added CORS middleware.
+
+5. Testing & Validation
+
+Tested with Postman and curl requests.
+Verified error handling for invalid inputs.
+
+6. Future Improvements
+
+Add authentication (JWT).
+
+Replace mock APIs with real KYC/credit APIs.
